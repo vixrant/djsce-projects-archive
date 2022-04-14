@@ -1,0 +1,51 @@
+// Problems
+
+.problem-card {
+  display: flex;
+  flex-direction: column;
+  width: max-content;
+  background: white;
+}
+
+.problem-img {
+  height: 140px;
+  width: 320px;
+  border-radius: 16px;
+}
+
+// Map
+
+.popover-fit {
+  width: 360px !important;
+}
+
+#map-container {
+  width: 100vw;
+  height: 100vh;
+}
+
+// Sidebar
+
+#sidebar {
+  width: 64px;
+  height: 90vh;
+  border-radius: 32px;
+  background-color: white;
+  position: absolute;
+  left: 16px;
+  top: 5vh;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+// Grid masonry
+
+.masonry {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: masonry;
+  gap: 16px;
+}

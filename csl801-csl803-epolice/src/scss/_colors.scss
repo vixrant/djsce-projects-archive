@@ -1,0 +1,8 @@
+$custom-theme-colors: (
+  "primary": #FFD6A4,
+  "secondary": #FDE9DF,
+  "dark": #0881A3,
+  "light": #FFFDFB,
+);
+
+$theme-colors: map-merge($theme-colors, $custom-theme-colors);

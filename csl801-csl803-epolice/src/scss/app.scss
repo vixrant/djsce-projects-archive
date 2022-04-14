@@ -1,0 +1,11 @@
+/* import the necessary Bootstrap files */
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+
+@import "colors";
+
+/* finally, import Bootstrap */
+@import "node_modules/bootstrap/scss/bootstrap";
+
+@import "fonts";
+@import "components";
