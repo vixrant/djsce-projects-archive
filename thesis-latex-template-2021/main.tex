@@ -1,0 +1,93 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% DJSCE FINAL YEAR PROJECT REPORT
+%
+% By Vikrant Gajria
+% https://www.vgajria.com
+% B.E. 2021 Computer Engineering
+% Dwarkadas J. Sanghvi College of Engineering
+% Vile Parle, Mumbai
+%
+% NOTE:
+% Build using Xelatex
+%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% DOCUMENT CLASS AND PACKAGES %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+
+\usepackage[%
+        backend=biber,
+        style=ieee,
+        natbib=true,
+        backref=false,
+        backrefstyle=all+,
+        hyperref=true,
+]{biblatex}
+\addbibresource{references.bib}
+
+%%%%%%%%%%%%%%
+% FORMATTING %
+%%%%%%%%%%%%%%
+
+% As per DJ Sanghvi's 2020 and 2021 formatting guidelines
+\input{formatting}
+
+%%%%%%%%%%%%%%%
+% INFORMATION %
+%%%%%%%%%%%%%%%
+
+\title{Touchless interfaces using Deep Learning and Depth Sensing Camera}
+
+%%%%%%%%%%%%%%%%%%
+% DOCUMENT START %
+%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+%%%%%
+
+\input{pages/titlepage}
+\input{pages/front}
+\input{pages/certificate}
+\input{pages/approval}
+\input{pages/declaration}
+\input{pages/abstract}
+\input{pages/tableofcontents}
+\input{pages/listfigures}
+\input{pages/listtables}
+\input{pages/listabbr}
+
+%%%%% < CHAPTERS
+
+\startcontent
+
+\input{sections/s1_introduction} \pagebreak
+\input{sections/s2_literature} \pagebreak
+\input{sections/s3_system_analysis} \pagebreak
+\input{sections/s4_analysis_modeling} \pagebreak
+\input{sections/s5_design} \pagebreak
+\input{sections/s6_implementation} \pagebreak
+\input{sections/s7_testing} \pagebreak
+\input{sections/s8_results} \pagebreak
+
+%%%%% > CHAPTERS
+
+\pagestyle{references}
+\loadgeometry{noheadbutfoot} % Removes chapter and section from header
+\nocite{*} 
+\printbibliography
+
+%%
+
+\input{pages/acknowledgement}
+
+%%%%%
+
+% Use this for finding out your list of figures and tables for reference
+% \listoffigures \pagebreak 
+% \listoftables \pagebreak
+
+%%%%%
+\end{document}

@@ -1,0 +1,198 @@
+%%%%% Geometries
+
+% Body specifications
+\usepackage{geometry}
+
+\newgeometry{
+    a4paper,
+    top=30mm,
+    bottom=22mm,
+    footskip=10mm,
+    left=30mm,
+    right=20mm, 
+    textheight=245mm,
+    textwidth=160mm,
+    includeheadfoot=false
+}
+\savegeometry{noheadfoot}
+
+\newgeometry{
+    % a4paper,
+    top=30mm,
+    headheight=0mm,
+    headsep=0mm,
+    bottom=22mm,
+    footskip=10mm,
+    left=30mm,
+    right=20mm, 
+    textheight=245mm,
+    textwidth=160mm,
+    includeheadfoot
+}
+\savegeometry{noheadbutfoot}
+
+\newgeometry{
+    % a4paper,
+    top=15mm,
+    headheight=3mm,
+    headsep=12mm,
+    bottom=22mm,
+    footskip=10mm,
+    left=30mm,
+    right=20mm, 
+    textheight=245mm,
+    textwidth=160mm,
+    includeheadfoot
+}
+\savegeometry{headfoot}
+\loadgeometry{headfoot}
+
+%%%%% Formatting Guidelines
+
+%%
+\makeatletter
+
+% Colors
+\usepackage{xcolor}
+\colorlet{gold}{green!10!orange!90!}
+% Maths
+\usepackage{amssymb}
+\usepackage{amsmath}
+% Positioning
+\usepackage{float}
+% Figures
+\usepackage{graphicx}
+% Code
+\usepackage{listings}
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\tiny,
+    breakatwhitespace=false,
+    breaklines=true,
+    captionpos=t,
+    keepspaces=true,                 
+    numbers=left,
+    numbersep=5pt,
+    showspaces=false,
+    showstringspaces=false,
+    showtabs=false,
+    tabsize=1
+}
+\lstset{style=mystyle}
+
+% Line spacing
+\usepackage{setspace}
+\onehalfspacing
+
+% Headings
+\renewcommand\Large{\@setfontsize\Large{14pt}{16}}
+\renewcommand\large{\@setfontsize\large{14pt}{16}}
+\renewcommand\Huge{\@setfontsize\Huge{16pt}{20}}
+\renewcommand\huge{\@setfontsize\huge{16pt}{20}}
+
+% Drawing borders
+\usepackage{tikz}
+\usetikzlibrary{calc}
+
+% Header
+\usepackage{fancyhdr}
+\usepackage{ifthen}
+\renewcommand\headrulewidth{0pt}
+
+\fancypagestyle{content}{
+    \fancyhf{}
+    \fancyhead[R]{
+        \ifthenelse
+            {\isodd{\value{page}}}
+            {Section \nouppercase{\rightmark} \markright}
+            {Chapter \nouppercase{\leftmark}}
+    }
+    \lfoot{Computer Department, DJSCE}
+    \rfoot{\thepage}
+    \cfoot{
+        % Border
+        \tikz[remember picture,overlay]
+        {
+        \draw [line width=0.5mm,black]
+                ($ (current page.north west) + (1cm,-1cm) $)
+                rectangle
+                ($ (current page.south east) + (-1cm,1cm) $);
+        }
+    }
+}
+\pagestyle{content}
+
+%% No header for references
+\fancypagestyle{references}{
+  \fancyhf{}
+  \lfoot{Computer Department, DJSCE}
+  \rfoot{\thepage}
+  \cfoot{
+        % Border
+        \tikz[remember picture,overlay]
+        {
+        \draw [line width=0.5mm,black]
+                ($ (current page.north west) + (1cm,-1cm) $)
+                rectangle
+                ($ (current page.south east) + (-1cm,1cm) $);
+        }
+    }
+}
+
+% Times New Roman
+\usepackage{fontspec}
+\setromanfont{Times New Roman}
+
+% Tables and Figure captions should have section
+% number in them
+\usepackage{chngcntr}
+\usepackage{array}
+\counterwithin{table}{section}
+\counterwithin{figure}{section}
+
+% Tables which span multiple pages
+\usepackage{longtable}
+
+% Setting caption size
+\usepackage[skip=2pt,font=scriptsize]{caption}
+
+% Prefix and font sizes
+\usepackage{titlesec}
+\titleformat{\section}[display]{\Huge\bfseries\centering}{Chapter \thesection}{5pt}{}
+\titleformat{\subsection}{\Large\bfseries}{\thesubsection}{5pt}{}
+
+% Indexing
+\usepackage[pdftex,pdfpagelabels,bookmarks,hyperindex,hyperfigures]{hyperref}
+
+%%%%% Extra commands
+
+% Content section
+\newcommand{\startcontent}{
+    \loadgeometry{headfoot}
+    \setcounter{page}{1} % restart counting
+    \pagenumbering{arabic} % numbers
+    \onehalfspacing
+    \fontsize{12pt}{14pt} \selectfont % resets content font
+}
+
+% Tight lists
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+  
+% Correct section marks in header
+\renewcommand{\sectionmark}[1]{\xdef\leftmark{\thesection\quad#1}\xdef\rightmark{}}
+\renewcommand{\subsectionmark}[1]{\xdef\rightmark{\thesubsection\quad#1}}
+
+% Table type, center with fixed length
+\newcolumntype{x}[1]{>{\centering\arraybackslash\hspace{0pt}}p{#1}}
+
+%%
+\makeatother

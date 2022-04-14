@@ -1,0 +1,6 @@
+django
+pillow
+black
+django-crispy-forms
+whitenoise
+gunicorn

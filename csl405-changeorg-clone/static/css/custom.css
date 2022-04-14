@@ -1,0 +1,66 @@
+.app-body {
+    padding: 8px;
+}
+
+.center-form {
+    display: flex;
+    flex-direction: column;
+    padding: 8%;
+}
+
+#messages-box {
+    padding: 8px;
+    max-height: 100vh;
+    overflow: auto;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: auto;
+}
+
+.alert-message {
+    width: fit-content;
+}
+
+.navbar-toggler, .navbar-toggler:focus {
+    border: none;
+    outline: none;
+}
+
+#petition-detail {
+    background: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    padding-bottom: 1rem;
+}
+
+#petition-detail > #petition-image {
+    margin: -9px 0rem -4rem 0;
+    height: auto;
+    max-height: 40vh;
+    object-fit: cover;
+}
+
+#petition-detail > #petition-title {
+    padding: 1rem 2rem;
+    width: fit-content;
+    max-width: 100%;
+    height: auto;
+    border-bottom: 4px #BDC3C7 solid;
+    border-bottom-left-radius: 0.3rem;
+    border-bottom-right-radius: 0.3rem;
+}
+
+#petition-detail > #petition-description {
+    padding: 0.5rem;
+}
+
+.navbar.bg-primary {
+    background-color: #36D7B7 !important;
+    border-color: #16A085 !important;
+}
+
+.card-title a {
+    color: black;
+}

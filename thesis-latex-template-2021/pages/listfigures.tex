@@ -1,0 +1,31 @@
+%%%%%
+\begingroup
+\makeatletter
+
+\loadgeometry{noheadbutfoot}
+\pagestyle{plain}
+\setlength{\parindent}{0pt}
+\onehalfspacing
+\fontsize{12pt}{14pt} \selectfont
+
+\centerline{\Huge\bf\underline{List of Figures}}
+\vspace{4pt}
+
+% Use longtable if multipage
+\begin{table}[H]
+    \centering
+    \begin{tabular}
+        \hline
+        {\bf Fig. No. } & {\bf Figure Caption } & {\bf Page No. }
+        \\ \hline
+        1 &  & 1
+        \\ \hline
+    \end{tabular}
+\end{table}
+
+%
+\pagebreak
+
+%%%%%
+\endgroup
+\makeatother

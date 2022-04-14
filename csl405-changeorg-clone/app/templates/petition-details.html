@@ -1,0 +1,89 @@
+{% extends 'base.html' %} {% block body %} {% load crispy_forms_tags %}
+
+<div class="jumbotron" id="petition-detail">
+  <img src="{{ petition.cover_image.url }}" id="petition-image" />
+  <h1 class="display-4 card text-center mx-auto" id="petition-title">
+    <b>{{ petition.title }}</b>
+  </h1>
+  <p class="mx-auto">Posted by {{ petition.poster }}</p>
+  <p class="lead" id="petition-description">{{ petition.description }}</p>
+
+  {% if user.is_authenticated %}
+    {% if not user_has_signed %}
+      <button
+        class="btn btn-outline-success btn-lg mx-auto"
+        type="button"
+        data-toggle="modal"
+        data-target="#signatureModal">
+        Sign Now
+      </button>
+    {% else %}
+      <button
+        class="btn btn-outline-success disabled btn-lg mx-auto"
+        type="button">
+        You have already signed!
+      </button>
+    {% endif %}
+  {% else %}
+      <a href="{% url 'login' %}" class="mx-auto">
+        <button
+          class="btn btn-primary btn-lg"
+          type="button">
+            Log In!
+        </button>
+      </a>
+  {% endif %}
+</div>
+
+Users which have signed
+
+{% for sign in signatures %}
+  
+{% endfor %}
+
+<!-- Modal -->
+<div
+  class="modal fade"
+  id="signatureModal"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="signatureModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="signatureModalLabel">🔏 Sign this Petition</h5>
+        <button
+          type="button"
+          class="close"
+          data-dismiss="modal"
+          aria-label="Close"
+        >
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+
+      <form method="POST">
+        {% csrf_token %}
+        <div class="modal-body">
+          <p>
+            You are about to sign this petition. Your email and name will be
+            noted down. You can publish a message on the petition's page.
+          </p>
+          {{ signature_form | crispy }}
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-warning" data-dismiss="modal">
+            Close
+          </button>
+          <button type="submit" class="btn btn-success">
+            Sign
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
