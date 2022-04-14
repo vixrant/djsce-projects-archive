@@ -15,6 +15,7 @@
 2. Uber for Laundry [ReactJS, NodeJS, GraphQL, MySQL] <br>
 3. Gym manager [Java] <br>
 4. Police Complaint filing website [ReactJS, GraphQL] <br>
+5. Prefix-tree based autocompletion [C] <br>
 
 ## Student Clubs
 
