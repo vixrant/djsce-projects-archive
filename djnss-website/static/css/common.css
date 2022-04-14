@@ -1,0 +1,53 @@
+.Main {
+  	margin: 0;
+  	padding: 0;
+  	font-family: Arial, Helvetica, sans-serif;
+}
+
+.Card {
+	margin: 2vh; 
+	border: 1px solid #b5b5b5;
+	width: 50vh;
+	display: inline-flex;
+}
+
+.CardImg {
+	border: 1px solid gray;
+	height: 35vh;
+	object-fit: cover; 
+}
+
+
+.CardTitle {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 3vh;
+}
+
+.CardText {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.Heading {
+	background-color: #f4f4f4; 
+	border-radius: 2vh;
+	padding: 3vh;
+	text-align: center;	
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.Image {
+	border-radius: 3vh;
+	height: 40vh;
+	width: 100%;
+}
+
+.Row {
+	box-shadow: 4px 4px 15px 0 rgba(0, 0, 0, 0.15);
+	border-radius: 4vh;
+	padding: 5vh;
+	border: 1px solid gray;
+}
+
+.Committee {
+	border: none;
+}

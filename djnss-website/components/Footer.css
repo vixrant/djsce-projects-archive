@@ -1,0 +1,32 @@
+.Bottom {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 32px;
+}
+
+.Footer {
+    z-index: 0;
+    
+    height: 40vh;
+    width: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.Copyright {
+    padding: 14px;
+    text-align: center;
+
+    color: white;
+    background: #e84118;
+}
+
+.Footer > .Tree {
+    z-index: -1;
+    height: 100%;
+    width: unset;
+}
