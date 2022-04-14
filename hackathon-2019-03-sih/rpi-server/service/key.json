@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "healthmonitor-sih",
+  "private_key_id": "688df7768a25969a5005fffb72877bf9553de1c9",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQC41UlYjvvJo2f4\noLhvS5/NuMH9K/IiT6Og0s9Q5k1kHNzRVtKVi1c+mqR4lCtaeLLc68iS/EWwB62W\now0cF5ixL8JInOmvKjhlmeo0kqMfjq3CJ+FV2djYP6wqcTnuDvIBPgg1/UTcbTYT\nr3eGp+R+WYA6RT3vQVvPQIECUKzFPXtyjIZKN9xt+/v4+JUGpYcK6yZUjOdMPbEh\nbYqeAMRrTv4EWwUhl9HI7d77AgqkTaGADVGHmdJm+pxEl7/C+U42VwpokiKSM5HC\nkca96Rk7lDYd3ygFRgK2pn2tD+743+DFWtmEwc8APAgScOC9gc4J3JMUxsLncIY9\n4vXhF56nAgMBAAECggEAFao7yoDEBwAQ2qXtcxo1qor1WMQdwc4nm10VG4yggKjD\nbK7qcx3zRYLMiYJbTI5Tmi1HBDeZbDHniSh74RGWU8U0gYdm+sxjnOvRddpu+sQi\nHjJyKWUmE5REYsXafkrL12pv0vLoxJTxNEB/2E2grPtiWjIt5CKl7MvznekFP1SB\nBoibdR6FQ9wmzi5jHkcb21mXWnsgDk1nSF7cNzf7Jmu5YUXgycrWrVUkHdwa2jug\nkkbYxRqocMUtFLS7NZlKexNBVLqYbduM93hWegzXjsqrXpB+sK/erkPkaqzZjTOY\ngu8QdNYI/2jN5gjecwv3VQMmJ6sYy8IktdkZA+VKiQKBgQDkAnBlaB3FpUnQx/Fj\nxhHBYqmW64tdWD5NanwDP1jLFbQKjKjdSn7B79caZgqrFGTQmrO590x6uIvehNUB\nB09ZjSdMNQfI26seBQkXz/uFRo59AlD9kIOZ2oL2yYA1nyJ9KqMNM1RRZ7dgTdPb\nuC3pceah4B1bghF4ELOWlCIuXwKBgQDPhfYav9VCYKa/z8XNtwfAQ/WkzXuUq21q\nfLmOUi4rJHc0gffb8nWYrSId6/GW/kL04SA8zbv7NLJXVT96rVya16PHjiB3A12H\ngdaIfghzhu4RW0cpxyjzXeZaJExWjkW4voHDwbwIb8utmYrhSacxmoyzXY4AIYoe\nTPvd7RlkuQKBgQDHTbJ9kaLkjvSVARDpi8sdZWakO0RY1bev5/J6zDaLXm9AAW/h\n7yoZz9IQiz2sCWmORovvdFFvvDzWxvmBqqgbuRyuqnQhiJJs7S3jmLNc7i3C6/Fr\nk5TVOYHcwonFVVLKYiigc0uy1JwgHCeiGb5YHm3g9Yvz3x/x+Xdhmh6+tQKBgQC0\nCBxsMlX5Ys3mg4Kvp4SC6LI3SchXPq0Kf6+eZ28EIHuFwubbGimozTJW0PTisCw4\nMwH7nePh12KMXzlV3QYEkuTT31oMxY+jWiFagjQkvT7VMeG3vb6p+qE3PFw5ju2v\nix4aTH0quInzTcvtDC+O2ewMQzJIrNAc3151thaciQKBgQDM/79jQLO3Ss6Ltj7H\nlVcfNBPWZry8nrh1qCPaENxsfRBBrYV5NfxZhop3EICVIMkRaS/2QQwPFzaJwKeo\n/TQ5Y3U8V3ozFLifXF7f0SPFT648XADP0GVviCNoyXEmxxQiFzlZcSkdI7MGt12/\njw+zlvAsXVIv7RZcYTwZwTxzpg==\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-jzgm9@healthmonitor-sih.iam.gserviceaccount.com",
+  "client_id": "115035647180326284618",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-jzgm9%40healthmonitor-sih.iam.gserviceaccount.com"
+}

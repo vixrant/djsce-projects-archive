@@ -1,0 +1,9 @@
+@import url(http://allfont.net/allfont.css?fonts=digital-7);
+@font-face{
+    font-family: 'DIGI';
+    src: url('../../res/fonts/digital-7_[allfont.net].ttf') format('truetype')
+}
+.Digital{
+    font-family: DIGI;
+    text-align: center;
+}
