@@ -2,6 +2,9 @@
 
 Some project repositories are hosted on [Squirtle Skwad](https://github.com/squirtle-skwad) github organization for common access and ownership.
 
+## Personal Projects
+1. Shakal.io - Peer-to-Peer video chat website
+
 ## Hackathons
 
 1. Smart India Hackathon 2019: Patient Monitoring Infrastructure [C++, IoT, ReactJS, NodeJS, WebRTC, WebSockets] <br>
